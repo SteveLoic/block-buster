@@ -3,7 +3,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: 3-demo-kustomize-git-bb-app
-  namespace: 3-demo
+  namespace: flux-system
 spec:
   interval: 10s
   path: ./kustomize
@@ -11,3 +11,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: 3-demo-source-git-bb-app
+  targetNamespace: 3-demo 
+  createNamespace: true
