@@ -11,3 +11,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: 2-demo-source-git-bb-app
+  targetNamespace: 2-demo 
+  createNamespace: true  
